@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/photos/sunrise-over-bellagio-lake-como-italy-picture-id964782992?b=1&k=20&m=964782992&s=170667a&w=0&h=ZXtMUwK6tBKD8flIlbvCerDtVyq_Hs31KevL2HxiJSQ=);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+#nav{
+    width: 100%;
+    height: 20%;
+    /* background-color: blue; */
+    position: absolute;
+    /* margin-left: 60px; */
+    padding: 40px 50px;
+    display: flex;
+    
+    
+}
+#lnav h2{
+
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+}
+#nline{
+    background-color: white;
+    width: 60px;
+    height: 2px;
+    margin-left: 14px;
+
+}
+#nav h6{
+    color: white;
+    opacity: .5;
+    font-family: gilroy;
+}
+#nav #rnav{
+    /* width: 50%; */
+    display: flex;
+    position: absolute;
+    /* background-color: red; */
+    right: 70px;
+}
+#rnav a{
+    justify-content: center;
+    margin-left: 20px;
+      text-decoration: none;
+      color: white;   
+    gap: 20px;
+}
+
+#rnav a:nth-child(1){
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+
+#left{
+    /* overflow: hidden; */
+    position: relative;
+    gap: 50px;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.342);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+#left #scroll{
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    gap: 10px;
+    bottom: -80px;
+    transform-origin: 0 50%;
+    transform: translate(-50%,0) rotate(-90deg);
+}
+#scroll #line{
+    /* position: absolute; */
+    width: 100px;
+    height: 1.6px;
+    background-color: white;
+}
+
+#left .place{
+    color: white;
+    width: 100%;
+}
+#left .place:nth-child(2) h4{
+    font-size: 50px;
+    white-space: nowrap;
+    margin-top: 3px;
+    border-bottom: 2px solid white;
+
+
+}
+#left .place:nth-child(2) h6{
+    font-size: 20px;
+    white-space: nowrap;
+}
+.place h4{
+    font-weight: 500;
+}
+.place h6 {
+    font-weight: 600;
+    opacity: .6;
+}
+.place h4{
+    display: inline-block;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+    border-bottom: 1.3px solid white ;
+}
+#main #right{
+    width: 75%;
+    height: 100%;
+    /* background-color: red; */
+
+}
+#right #text{
+    position: absolute;
+    top: 50%;
+    right: 9%;
+    transform: translate(0,-50%);
+    color: white;
+    text-align: right;
+    
+}
+#text h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    
+}
+#text h1{
+    font-size: 120px;
+    font-weight: 400;
+
+}
+#input{
+    margin-top: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text #input i{
+    font-size: 20px;
+}
+#text input{
+    width: 100%;
+    padding: 12px 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 20px;
+    
+}
+#text input::placeholder{
+    color: white;
+} 
+
+#right small{
+    position: absolute;
+    bottom:5% ;
+    right: 5%;
+    color: white;
+}
